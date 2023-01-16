@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "3522ebee-280c-4fe0-83c0-2b0b800de852",
+		"name": "bpichincha",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "personas - listar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/personas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"personas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "personas - listar por id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/personas/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"personas",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "personas - eliminar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/personas/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"personas",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "personas - registrar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Dario Onofre\",\n    \"genero\": \"M\",\n    \"edad\": 34,\n    \"identificacion\": \"1719382986\",\n    \"direccion\": \"Mercado_Mayorista\",\n    \"telefono\": \"0988569896\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/personas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"personas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "personas - modificar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"idPersona\":\"6\",\n    \"nombre\": \"David Onofre\",\n    \"genero\": \"M\",\n    \"edad\": 34,\n    \"identificacion\": \"1719382986\",\n    \"direccion\": \"Mercado_Mayorista\",\n    \"telefono\": \"0988569896\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/personas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"personas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
